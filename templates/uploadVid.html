@@ -1,0 +1,13 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="container">
+    <h1>Capture and Upload the Video</h1>
+    <form action="{{ url_for('upload_vid')}}" method="POST" enctype="multipart/form-data">
+        <!-- <input type="file" name="vidfile" accept="video/*" {{cap|safe}}><br> -->
+        <input type="file" name="vidfile" accept="video/*;capture=camcorder">
+        <button type="submit" name="upload_vid">Upload</button>
+    </form>
+
+    {%include btn ignore missing%}
+</div>
+{%endblock%}

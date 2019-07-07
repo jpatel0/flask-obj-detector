@@ -1,0 +1,7 @@
+#!C:\Users\Zero\AppData\Local\Continuum\anaconda3\python.exe
+
+import sys
+from darkflow.cli import cliHandler
+
+cliHandler(sys.argv)
+
